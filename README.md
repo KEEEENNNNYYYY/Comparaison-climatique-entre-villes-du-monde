@@ -18,7 +18,7 @@ L'objectif est de **suivre, analyser et visualiser** des indicateurs météorolo
 - **OpenWeather API** – Données météo en temps réel
 - **Données historiques** – Sources CSV / Json publiques (ex: Kaggle)
 - **Pandas / Numpy** – Traitement des données
-- **csv / Json** – Stockage structuré
+- **PostgreSQL** – Stockage structuré
 - **Looker Studio** – Visualisation interactive
 
 ---
@@ -31,5 +31,5 @@ Le pipeline est structuré et orchestré à l’aide de **DAG Airflow** :
 [extract_historic_data] ---> 
 [extract_openweather_data] ---> 
 [clean_and_merge_data] ---> 
-[save_data_to_csv_or_json] ---> 
+[save_data_to_csv_or_db] ---> 
 [update_dashboard]
