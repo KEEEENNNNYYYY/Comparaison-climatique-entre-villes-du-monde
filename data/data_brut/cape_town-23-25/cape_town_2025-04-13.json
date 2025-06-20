@@ -1,0 +1,11 @@
+{
+  "city": "Cape Town",
+  "date": "2025-04-13",
+  "temperature_avg": 16.6,
+  "temperature_min": 13.0,
+  "temperature_max": 21.0,
+  "precipitation": 0.3,
+  "snow": null,
+  "wind_speed": 19.5,
+  "humidity": null
+}

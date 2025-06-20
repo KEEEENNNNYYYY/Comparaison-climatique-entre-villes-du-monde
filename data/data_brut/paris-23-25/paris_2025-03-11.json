@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2025-03-11",
+  "temperature_avg": 7.3,
+  "temperature_min": 3.9,
+  "temperature_max": 11.9,
+  "precipitation": 0.2,
+  "snow": null,
+  "wind_speed": 7.8,
+  "humidity": null
+}

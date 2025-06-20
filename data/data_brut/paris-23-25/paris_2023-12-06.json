@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2023-12-06",
+  "temperature_avg": 6.2,
+  "temperature_min": 3.9,
+  "temperature_max": 8.5,
+  "precipitation": 0.2,
+  "snow": null,
+  "wind_speed": 7.7,
+  "humidity": null
+}

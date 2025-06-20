@@ -1,0 +1,11 @@
+{
+  "city": "Cape Town",
+  "date": "2024-01-10",
+  "temperature_avg": 21.0,
+  "temperature_min": 18.3,
+  "temperature_max": 25.0,
+  "precipitation": 0.0,
+  "snow": null,
+  "wind_speed": 37.5,
+  "humidity": null
+}
