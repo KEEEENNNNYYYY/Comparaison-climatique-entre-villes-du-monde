@@ -5,7 +5,7 @@ import os
 import sys
 
 # Ajout du chemin pour accéder à pipeline/
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 # Import de la fonction depuis le bon fichier
 from pipeline.extract.cape_town_extract import fetch_and_save_history
