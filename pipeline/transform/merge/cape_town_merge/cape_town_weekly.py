@@ -7,9 +7,9 @@ def merge_weekly_averages():
     source_folder = os.path.abspath(
         os.path.join(os.path.dirname(__file__), '../../../../data/data_propre/cape_town-20-25')
     )
-    # Chemin de sortie pour le fichier de résultats hebdomadaires
+    # Nouveau chemin de sortie pour le fichier CSV
     output_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '../../../../data/data_pret/cape_town-20-25/hebdomadaire/cape_town_weekly.json')
+        os.path.join(os.path.dirname(__file__), '../../../../data/data_pret/cape_town-20-25/hebdomadaire/cape_town_weekly.csv')
     )
 
     records = []
@@ -39,11 +39,11 @@ def merge_weekly_averages():
     # Création du DataFrame
     df = pd.DataFrame(records)
 
-    # Ajout de la semaine ISO pour regrouper
+    # Ajout de la semaine ISO pour regroupement
     df['week'] = df['date'].dt.isocalendar().week
     df['year'] = df['date'].dt.year
 
-    # Groupement par année + semaine, puis moyenne
+    # Groupement par année + semaine, puis calcul des moyennes
     grouped = df.groupby(['year', 'week']).agg({
         'temperature_avg': 'mean',
         'temperature_min': 'mean',
@@ -54,7 +54,7 @@ def merge_weekly_averages():
         'humidity': 'mean'
     }).reset_index()
 
-    # Fusion des colonnes année + semaine en un champ lisible
+    # Création d’un identifiant de semaine lisible
     grouped['week_id'] = grouped['year'].astype(str) + '-W' + grouped['week'].astype(str).str.zfill(2)
     grouped = grouped.drop(columns=['year', 'week'])
 
@@ -62,12 +62,11 @@ def merge_weekly_averages():
     cols = ['week_id'] + [col for col in grouped.columns if col != 'week_id']
     grouped = grouped[cols]
 
-    # Sauvegarde du résultat
+    # Sauvegarde du résultat en CSV
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    grouped.to_json(output_path, orient='records', indent=2)
+    grouped.to_csv(output_path, index=False, encoding='utf-8')
 
-    print(f"Fichier des moyennes hebdomadaires sauvegardé ici : {output_path}")
-
+    print(f"✅ Fichier des moyennes hebdomadaires CSV sauvegardé ici : {output_path}")
 
 # Pour exécution directe
 if __name__ == '__main__':
