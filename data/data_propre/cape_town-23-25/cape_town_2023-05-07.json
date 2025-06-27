@@ -1,0 +1,11 @@
+{
+  "city": "Cape Town",
+  "date": "2023-05-07",
+  "temperature_avg": 16.6,
+  "temperature_min": 13.5,
+  "temperature_max": 20.6,
+  "precipitation": 0.2,
+  "snow": 0.0,
+  "wind_speed": 12.3,
+  "humidity": 0.0
+}

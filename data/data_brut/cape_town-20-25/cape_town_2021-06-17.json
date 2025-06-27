@@ -1,0 +1,11 @@
+{
+  "city": "Cape Town",
+  "date": "2021-06-17",
+  "temperature_avg": 13.4,
+  "temperature_min": 11.6,
+  "temperature_max": 15.7,
+  "precipitation": 1.0,
+  "snow": null,
+  "wind_speed": 10.2,
+  "humidity": null
+}

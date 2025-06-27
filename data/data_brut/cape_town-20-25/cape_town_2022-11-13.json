@@ -1,0 +1,11 @@
+{
+  "city": "Cape Town",
+  "date": "2022-11-13",
+  "temperature_avg": 17.4,
+  "temperature_min": 13.6,
+  "temperature_max": 21.8,
+  "precipitation": 0.0,
+  "snow": null,
+  "wind_speed": 9.8,
+  "humidity": null
+}

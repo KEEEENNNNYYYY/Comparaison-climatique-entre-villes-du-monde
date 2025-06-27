@@ -1,0 +1,11 @@
+{
+  "city": "Cape Town",
+  "date": "2020-08-27",
+  "temperature_avg": 13.1,
+  "temperature_min": 8.0,
+  "temperature_max": 18.0,
+  "precipitation": 0.0,
+  "snow": null,
+  "wind_speed": 12.9,
+  "humidity": null
+}
