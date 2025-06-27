@@ -7,7 +7,7 @@ import pandas as pd
 # Coordonnées pour Cape Town, Afrique du Sud
 cape_town = Point(-33.9249, 18.4241)
 
-def fetch_and_save_history(start_date: str = "2023-05-19", output_dir: str = "/home/unity/airflow/data/cape_town-23-25/"):
+def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = "/home/unity/airflow/data/data_brut/cape_town-20-25/"):
     """Récupère les données historiques Meteostat pour Cape Town et les enregistre dans un fichier par jour"""
     start = datetime.strptime(start_date, "%Y-%m-%d")
     end = datetime.now()

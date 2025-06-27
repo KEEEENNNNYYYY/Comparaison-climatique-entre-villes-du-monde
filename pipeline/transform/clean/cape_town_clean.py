@@ -3,8 +3,8 @@ import json
 
 def clean_and_write():
     base_path = os.path.abspath(os.path.dirname(__file__))
-    source_folder = os.path.join(base_path, '../../../data/data_brut/cape_town-23-25')
-    destination_folder = os.path.join(base_path, '../../../data/data_propre/cape_town-23-25')
+    source_folder = os.path.join(base_path, '../../../data/data_brut/cape_town-20-25')
+    destination_folder = os.path.join(base_path, '../../../data/data_propre/cape_town-20-25')
     os.makedirs(destination_folder, exist_ok=True)
 
     for filename in os.listdir(source_folder):
