@@ -5,11 +5,11 @@ import pandas as pd
 def merge_weekly_averages():
     # Chemin du dossier source contenant les fichiers journaliers JSON
     source_folder = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '../../../data/data_propre/cape_town-20-25')
+        os.path.join(os.path.dirname(__file__), '../../../../data/data_propre/cape_town-20-25')
     )
     # Chemin de sortie pour le fichier de résultats hebdomadaires
     output_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '../../../data/merge/cape_town_weekly.json')
+        os.path.join(os.path.dirname(__file__), '../../../../data/data_pret/cape_town-20-25/hebdomadaire/cape_town_weekly.json')
     )
 
     records = []
