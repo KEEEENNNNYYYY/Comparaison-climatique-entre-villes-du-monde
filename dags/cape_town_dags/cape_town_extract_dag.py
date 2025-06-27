@@ -11,7 +11,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 from pipeline.extract.cape_town_extract import fetch_and_save_history
 
 default_args = {
-    'start_date': datetime(2023, 6, 1),
+    'start_date': datetime(2020, 1, 1),
     'catchup': False
 }
 
@@ -24,7 +24,7 @@ with DAG("cape_town_extract",
         task_id="cape_town_history",
         python_callable=fetch_and_save_history,
         op_kwargs={
-            "start_date": "2023-05-19",
-            "output_dir": "/home/unity/airflow/data/data_brut/cape_town-23-25/"
+            "start_date": "2020-01-01",
+            "output_dir": "/home/unity/airflow/data/data_brut/cape_town-20-25/"
         }
     )
