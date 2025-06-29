@@ -8,7 +8,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 # Import de la fonction de transformation
-from pipeline.transform.merge.cape_town_merge.cape_town_weekly import merge_weekly_averages
+from pipeline.transform.merge.cape_town_merge import merge_weekly_averages
 
 default_args = {
     'start_date': datetime(2020, 1, 1),
