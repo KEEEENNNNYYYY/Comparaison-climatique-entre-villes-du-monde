@@ -8,22 +8,22 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 # Import de la fonction de transformation
-from pipeline.transform.merge.cape_town_merge import merge_weekly_averages
+from pipeline.transform.merge.cape_town_merge import merge_all_json_to_csv
 
 default_args = {
     'start_date': datetime(2020, 1, 1),
     'catchup': False
 }
 
-with DAG("cape_town_merge_weekly",
+with DAG("cape_town_merge",
          default_args=default_args,
          schedule_interval="@once",
-         tags=["weather", "weekly", "merge"]
+         tags=["weather", "merge"]
 
 ) as dag:
-    task_merge_weekly = PythonOperator(
-        task_id="merge_weekly_data",
-        python_callable=merge_weekly_averages
+    task_merge = PythonOperator(
+        task_id="merge_data",
+        python_callable=merge_all_json_to_csv
     )
 
-    task_merge_weekly
+    task_merge
