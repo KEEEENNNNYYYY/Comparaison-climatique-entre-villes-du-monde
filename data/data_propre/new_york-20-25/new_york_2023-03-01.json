@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2023-03-01",
+  "temperature_avg": 4.6,
+  "temperature_min": 2.0,
+  "temperature_max": 6.7,
+  "precipitation": 2.1,
+  "snow": 3.0,
+  "wind_speed": 12.8,
+  "humidity": 0.0
+}

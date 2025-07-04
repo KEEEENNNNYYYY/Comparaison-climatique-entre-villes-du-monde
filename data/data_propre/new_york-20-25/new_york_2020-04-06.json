@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2020-04-06",
+  "temperature_avg": 13.7,
+  "temperature_min": 10.0,
+  "temperature_max": 18.3,
+  "precipitation": 1.5,
+  "snow": 0.0,
+  "wind_speed": 8.7,
+  "humidity": 0.0
+}

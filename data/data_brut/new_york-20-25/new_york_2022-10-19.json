@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2022-10-19",
+  "temperature_avg": 8.6,
+  "temperature_min": 5.0,
+  "temperature_max": 12.3,
+  "precipitation": 0.2,
+  "snow": 0.0,
+  "wind_speed": 18.4,
+  "humidity": null
+}

@@ -1,0 +1,11 @@
+{
+  "city": "Antananarivo",
+  "date": "2020-01-10",
+  "temperature_avg": 22.2,
+  "temperature_min": 18.0,
+  "temperature_max": 28.0,
+  "precipitation": null,
+  "snow": null,
+  "wind_speed": 10.5,
+  "humidity": null
+}

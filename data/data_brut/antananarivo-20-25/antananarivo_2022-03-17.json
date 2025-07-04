@@ -1,0 +1,11 @@
+{
+  "city": "Antananarivo",
+  "date": "2022-03-17",
+  "temperature_avg": 20.8,
+  "temperature_min": 18.4,
+  "temperature_max": 25.6,
+  "precipitation": 17.0,
+  "snow": null,
+  "wind_speed": 7.8,
+  "humidity": null
+}

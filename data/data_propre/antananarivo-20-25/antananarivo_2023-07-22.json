@@ -1,0 +1,11 @@
+{
+  "city": "Antananarivo",
+  "date": "2023-07-22",
+  "temperature_avg": 16.2,
+  "temperature_min": 13.8,
+  "temperature_max": 20.7,
+  "precipitation": 0.2,
+  "snow": 0.0,
+  "wind_speed": 16.5,
+  "humidity": 0.0
+}

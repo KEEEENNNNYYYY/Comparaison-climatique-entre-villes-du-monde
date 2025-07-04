@@ -1,11 +1,11 @@
 {
   "city": "Paris",
   "date": "2025-06-12",
-  "temperature_avg": 24.5,
+  "temperature_avg": 24.6,
   "temperature_min": 17.9,
   "temperature_max": 31.2,
   "precipitation": 0.0,
   "snow": null,
-  "wind_speed": 12.0,
+  "wind_speed": 12.3,
   "humidity": null
 }

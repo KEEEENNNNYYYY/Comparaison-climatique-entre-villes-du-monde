@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2022-01-19",
+  "temperature_avg": 5.7,
+  "temperature_min": 4.5,
+  "temperature_max": 6.7,
+  "precipitation": 1.8,
+  "snow": 0.0,
+  "wind_speed": 8.7,
+  "humidity": 0.0
+}

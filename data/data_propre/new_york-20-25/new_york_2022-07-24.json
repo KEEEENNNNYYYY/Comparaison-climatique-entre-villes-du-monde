@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2022-07-24",
+  "temperature_avg": 30.8,
+  "temperature_min": 26.1,
+  "temperature_max": 35.0,
+  "precipitation": 0.7,
+  "snow": 0.0,
+  "wind_speed": 12.9,
+  "humidity": 0.0
+}

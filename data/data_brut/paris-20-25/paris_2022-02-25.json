@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2022-02-25",
+  "temperature_avg": 6.6,
+  "temperature_min": 3.5,
+  "temperature_max": 10.6,
+  "precipitation": 0.4,
+  "snow": null,
+  "wind_speed": 12.2,
+  "humidity": null
+}

@@ -4,8 +4,8 @@
   "temperature_avg": 12.9,
   "temperature_min": 12.0,
   "temperature_max": 14.0,
-  "precipitation": 21.5,
+  "precipitation": 0.0,
   "snow": null,
-  "wind_speed": 23.1,
+  "wind_speed": 37.2,
   "humidity": null
 }

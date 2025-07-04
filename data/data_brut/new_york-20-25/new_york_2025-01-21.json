@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2025-01-21",
+  "temperature_avg": -8.2,
+  "temperature_min": -10.6,
+  "temperature_max": -6.7,
+  "precipitation": 0.0,
+  "snow": 5.0,
+  "wind_speed": 13.3,
+  "humidity": null
+}

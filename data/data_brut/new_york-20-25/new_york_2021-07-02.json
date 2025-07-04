@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2021-07-02",
+  "temperature_avg": 22.7,
+  "temperature_min": 18.3,
+  "temperature_max": 26.1,
+  "precipitation": 38.9,
+  "snow": 0.0,
+  "wind_speed": 10.1,
+  "humidity": null
+}

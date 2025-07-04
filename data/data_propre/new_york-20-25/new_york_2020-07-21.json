@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2020-07-21",
+  "temperature_avg": 29.4,
+  "temperature_min": 26.7,
+  "temperature_max": 33.9,
+  "precipitation": 0.0,
+  "snow": 0.0,
+  "wind_speed": 6.3,
+  "humidity": 0.0
+}

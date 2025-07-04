@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2020-01-06",
+  "temperature_avg": 3.9,
+  "temperature_min": -0.5,
+  "temperature_max": 7.8,
+  "precipitation": 0.8,
+  "snow": 3.0,
+  "wind_speed": 16.0,
+  "humidity": 0.0
+}

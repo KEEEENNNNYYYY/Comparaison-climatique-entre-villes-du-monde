@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2023-05-24",
+  "temperature_avg": 17.3,
+  "temperature_min": 13.3,
+  "temperature_max": 24.4,
+  "precipitation": 1.8,
+  "snow": 0.0,
+  "wind_speed": 8.9,
+  "humidity": 0.0
+}

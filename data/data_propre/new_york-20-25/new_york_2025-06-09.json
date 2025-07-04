@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2025-06-09",
+  "temperature_avg": 18.4,
+  "temperature_min": 15.4,
+  "temperature_max": 20.5,
+  "precipitation": 7.6,
+  "snow": 0.0,
+  "wind_speed": 14.9,
+  "humidity": 0.0
+}

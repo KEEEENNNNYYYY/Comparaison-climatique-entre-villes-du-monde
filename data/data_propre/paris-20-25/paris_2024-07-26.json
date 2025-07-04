@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2024-07-26",
+  "temperature_avg": 20.7,
+  "temperature_min": 18.7,
+  "temperature_max": 22.6,
+  "precipitation": 19.6,
+  "snow": 0.0,
+  "wind_speed": 4.8,
+  "humidity": 0.0
+}

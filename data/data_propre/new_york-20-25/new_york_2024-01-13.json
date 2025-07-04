@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2024-01-13",
+  "temperature_avg": 8.8,
+  "temperature_min": 2.8,
+  "temperature_max": 12.8,
+  "precipitation": 49.6,
+  "snow": 0.0,
+  "wind_speed": 26.2,
+  "humidity": 0.0
+}

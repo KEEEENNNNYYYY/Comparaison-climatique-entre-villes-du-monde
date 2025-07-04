@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2021-04-15",
+  "temperature_avg": 7.0,
+  "temperature_min": 3.0,
+  "temperature_max": 11.1,
+  "precipitation": 0.4,
+  "snow": null,
+  "wind_speed": 14.0,
+  "humidity": null
+}

@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2023-08-18",
+  "temperature_avg": 25.1,
+  "temperature_min": 19.6,
+  "temperature_max": 31.4,
+  "precipitation": 0.1,
+  "snow": 0.0,
+  "wind_speed": 7.2,
+  "humidity": 0.0
+}

@@ -1,0 +1,11 @@
+{
+  "city": "New York",
+  "date": "2021-11-23",
+  "temperature_avg": 2.2,
+  "temperature_min": -0.2,
+  "temperature_max": 5.8,
+  "precipitation": 0.1,
+  "snow": 0.0,
+  "wind_speed": 20.8,
+  "humidity": 0.0
+}

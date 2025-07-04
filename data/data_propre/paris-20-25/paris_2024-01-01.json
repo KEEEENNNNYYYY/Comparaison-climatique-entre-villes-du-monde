@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2024-01-01",
+  "temperature_avg": 8.2,
+  "temperature_min": 6.2,
+  "temperature_max": 10.9,
+  "precipitation": 4.1,
+  "snow": 0.0,
+  "wind_speed": 16.4,
+  "humidity": 0.0
+}

@@ -1,0 +1,11 @@
+{
+  "city": "Paris",
+  "date": "2020-08-22",
+  "temperature_avg": 21.3,
+  "temperature_min": 17.0,
+  "temperature_max": 25.8,
+  "precipitation": 0.0,
+  "snow": null,
+  "wind_speed": 15.1,
+  "humidity": null
+}

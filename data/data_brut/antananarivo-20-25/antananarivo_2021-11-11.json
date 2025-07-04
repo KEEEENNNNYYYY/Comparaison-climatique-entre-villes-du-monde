@@ -1,0 +1,11 @@
+{
+  "city": "Antananarivo",
+  "date": "2021-11-11",
+  "temperature_avg": 24.2,
+  "temperature_min": 18.7,
+  "temperature_max": 32.9,
+  "precipitation": 0.0,
+  "snow": null,
+  "wind_speed": 6.5,
+  "humidity": null
+}
