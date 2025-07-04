@@ -17,7 +17,7 @@ default_args = {
 
 with DAG("antananarivo_extract",
          default_args=default_args,
-         schedule_interval="@once",
+         schedule_interval="15 8 * * *", 
          tags=["weather", "history", "antananarivo"],
          description="Extraction des données météo historiques pour Antananarivo") as dag:
 

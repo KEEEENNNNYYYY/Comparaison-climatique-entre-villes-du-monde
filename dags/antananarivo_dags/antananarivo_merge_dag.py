@@ -18,7 +18,7 @@ default_args = {
 with DAG(
     dag_id="antananarivo_merge",
     default_args=default_args,
-    schedule_interval="@once",
+    schedule_interval="45 8 * * *", 
     tags=["weather", "merge", "antananarivo"],
     description="Fusion des fichiers JSON propres d’Antananarivo en un CSV unique"
 ) as dag:

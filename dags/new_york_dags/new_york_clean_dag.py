@@ -17,7 +17,7 @@ default_args = {
 
 with DAG(
     dag_id='new_york_clean_dag',
-    schedule_interval="@once",
+    schedule_interval="30 8 * * *", 
     default_args=default_args,
     tags=['new_york', 'clean'],
     description='Nettoyage des fichiers JSON bruts de New York',

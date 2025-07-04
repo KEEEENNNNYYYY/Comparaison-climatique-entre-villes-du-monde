@@ -18,7 +18,7 @@ default_args = {
 with DAG(
     "new_york_load",
     default_args=default_args,
-    schedule_interval="@once",
+    schedule_interval="0 9 * * *", 
     tags=["weather", "load", "new_york"]
 ) as dag:
 
@@ -31,7 +31,7 @@ with DAG(
             service_account_path=service_account_path,
             file_path=file_path,
             file_name='new_york.csv',
-            folder_id='1RNPT0k2C2ySy8r1XS9g7d-ykFjmHhOuc'  # Remplace si nécessaire
+            folder_id='1RNPT0k2C2ySy8r1XS9g7d-ykFjmHhOuc' 
         )
 
     task_upload = PythonOperator(

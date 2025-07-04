@@ -17,7 +17,7 @@ default_args = {
 
 with DAG("cape_town_extract",
          default_args=default_args,
-         schedule_interval="@once",
+         schedule_interval="15 8 * * *", 
          tags=["weather", "history"]) as dag:
 
     def get_output_path():

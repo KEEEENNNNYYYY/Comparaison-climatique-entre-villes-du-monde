@@ -17,7 +17,7 @@ default_args = {
 
 with DAG("new_york_merge",
          default_args=default_args,
-         schedule_interval="@once",
+         schedule_interval="45 8 * * *", 
          tags=["weather", "merge", "new_york"]
 ) as dag:
     task_merge = PythonOperator(

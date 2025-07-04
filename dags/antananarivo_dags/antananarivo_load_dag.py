@@ -18,7 +18,7 @@ default_args = {
 with DAG(
     dag_id="antananarivo_load",
     default_args=default_args,
-    schedule_interval="@once",
+    schedule_interval="0 9 * * *", 
     tags=["weather", "load", "antananarivo"],
     description="Chargement des données météo d’Antananarivo vers Google Sheets"
 ) as dag:
