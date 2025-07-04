@@ -40,7 +40,7 @@ def write_df_to_sheet(service, spreadsheet_id, df, sheet_name='Sheet1'):
     print(f"✅ {len(df)} lignes écrites dans la feuille.")
 
 
-def upload_csv_to_drive(service_account_path, file_path, file_name, folder_id):
+def upload_csv_to_drive(service_account_path, file_path, file_name="new_york.csv", folder_id=None):
     # Authentification
     creds = service_account.Credentials.from_service_account_file(
         service_account_path,
@@ -53,6 +53,6 @@ def upload_csv_to_drive(service_account_path, file_path, file_name, folder_id):
     df = pd.read_csv(file_path)
 
     # Envoi vers Google Sheets
-    sheet_name = os.path.splitext(file_name)[0]
+    sheet_name = os.path.splitext(file_name)[0]  # "new_york"
     spreadsheet_id = get_or_create_sheet(drive_service, sheet_name, folder_id)
     write_df_to_sheet(sheets_service, spreadsheet_id, df)

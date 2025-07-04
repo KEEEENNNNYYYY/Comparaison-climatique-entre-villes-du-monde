@@ -4,39 +4,29 @@ import json
 from meteostat import Point, Daily
 import pandas as pd
 
-# Coordonnées de Cape Town, Afrique du Sud
-cape_town = Point(-33.9249, 18.4241)
+# Coordonnées d'Antananarivo, Madagascar
+antananarivo = Point(-18.8792, 47.5079)
 
-# Définition du dossier de sortie
-base_path = os.path.abspath(os.path.dirname(__file__))
-target_folder = os.path.normpath(os.path.join(base_path, '../../data/data_brut/cape_town-20-25'))
-
-
-def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = target_folder):
-    """Récupère les données historiques Meteostat pour Cape Town et les enregistre dans un fichier JSON par jour"""
-
+def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = "./data"):
     try:
         start = datetime.strptime(start_date, "%Y-%m-%d")
         end = datetime.now()
 
         os.makedirs(output_dir, exist_ok=True)
 
-        # Récupération des données météo
-        data = Daily(cape_town, start, end).fetch()
+        data = Daily(antananarivo, start, end).fetch()
 
         if data.empty:
             print("[!] Aucune donnée récupérée.")
             return
 
         for date, row in data.iterrows():
-            filename = f"cape_town_{date.strftime('%Y-%m-%d')}.json"
+            filename = f"antananarivo_{date.strftime('%Y-%m-%d')}.json"
             path = os.path.join(output_dir, filename)
-
-            # Convertit les valeurs manquantes en None (pour JSON)
             row_cleaned = row.where(pd.notnull(row), None)
 
             weather_info = {
-                "city": "Cape Town",
+                "city": "Antananarivo",
                 "date": date.strftime("%Y-%m-%d"),
                 "temperature_avg": row_cleaned.get("tavg"),
                 "temperature_min": row_cleaned.get("tmin"),
@@ -47,7 +37,7 @@ def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = tar
                 "humidity": row_cleaned.get("rhum"),
             }
 
-            with open(path, "w") as f:
+            with open(path, "w", encoding="utf-8") as f:
                 json.dump(weather_info, f, indent=2)
 
             print(f"[✔] Données sauvegardées dans {path}")

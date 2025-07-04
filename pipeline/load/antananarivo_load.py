@@ -3,7 +3,6 @@ import pandas as pd
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
-
 def get_or_create_sheet(service, sheet_name, folder_id):
     query = f"'{folder_id}' in parents and name = '{sheet_name}' and mimeType = 'application/vnd.google-apps.spreadsheet' and trashed = false"
     results = service.files().list(q=query, fields="files(id)").execute()
@@ -24,7 +23,6 @@ def get_or_create_sheet(service, sheet_name, folder_id):
 
     return spreadsheet_id
 
-
 def write_df_to_sheet(service, spreadsheet_id, df, sheet_name='Sheet1'):
     sheets_service = service.spreadsheets()
     sheets_service.values().clear(spreadsheetId=spreadsheet_id, range=sheet_name).execute()
@@ -38,7 +36,6 @@ def write_df_to_sheet(service, spreadsheet_id, df, sheet_name='Sheet1'):
     ).execute()
 
     print(f"✅ {len(df)} lignes écrites dans la feuille.")
-
 
 def upload_csv_to_drive(service_account_path, file_path, file_name, folder_id):
     # Authentification

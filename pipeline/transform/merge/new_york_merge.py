@@ -4,10 +4,10 @@ import pandas as pd
 
 def merge_all_json_to_csv():
     source_folder = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '../../../data/data_propre/paris-20-25')
+        os.path.join(os.path.dirname(__file__), '../../../data/data_propre/new_york-20-25')
     )
     output_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '../../../data/data_pret/paris.csv')
+        os.path.join(os.path.dirname(__file__), '../../../data/data_pret/new_york.csv')
     )
 
     records = []
