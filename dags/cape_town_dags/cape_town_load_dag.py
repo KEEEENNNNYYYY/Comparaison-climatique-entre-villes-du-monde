@@ -4,39 +4,31 @@ from datetime import datetime
 import os
 import sys
 
-
+# Ajout du chemin pour accéder à pipeline/
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-# Import de la fonction d'upload
-from pipeline.load.cape_town_load import upload_csv_to_drive
+# Import de la fonction depuis le bon fichier
+from pipeline.extract.cape_town_extract import fetch_and_save_history
 
 default_args = {
-    'start_date': datetime(2024, 1, 1),
+    'start_date': datetime(2020, 1, 1),
     'catchup': False
 }
 
-with DAG("cape_town_load",
+with DAG("cape_town_extract",
          default_args=default_args,
          schedule_interval="@once",
-         tags=["weather", "load"]
-) as dag:
+         tags=["weather", "history"]) as dag:
 
-    def run_upload():
-        # Construire les chemins absolus à partir de la position du script DAG
+    def get_output_path():
         base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
-        service_account_path = os.path.join(base_dir, 'pipeline/load/service-account.json')
-        file_path = os.path.join(base_dir, 'data/data_pret/cape_town.csv')
+        return os.path.join(base_dir, 'data/data_brut/cape_town-20-25')
 
-        upload_csv_to_drive(
-            service_account_path=service_account_path,
-            file_path=file_path,
-            file_name='cape_town.csv',
-            folder_id='1RNPT0k2C2ySy8r1XS9g7d-ykFjmHhOuc'
-        )
-
-    task_upload = PythonOperator(
-        task_id="upload_csv_to_drive",
-        python_callable=run_upload
+    task_fetch_history = PythonOperator(
+        task_id="cape_town_history",
+        python_callable=fetch_and_save_history,
+        op_kwargs={
+            "start_date": "2020-01-01",
+            "output_dir": get_output_path()
+        }
     )
-
-    task_upload
