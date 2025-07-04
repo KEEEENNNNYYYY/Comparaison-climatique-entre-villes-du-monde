@@ -20,11 +20,15 @@ with DAG("cape_town_extract",
          schedule_interval="@once",
          tags=["weather", "history"]) as dag:
 
+    def get_output_path():
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+        return os.path.join(base_dir, 'data/data_brut/cape_town-20-25')
+
     task_fetch_history = PythonOperator(
         task_id="cape_town_history",
         python_callable=fetch_and_save_history,
         op_kwargs={
             "start_date": "2020-01-01",
-            "output_dir": "/home/unity/airflow/data/data_brut/cape_town-20-25/"
+            "output_dir": get_output_path()
         }
     )
