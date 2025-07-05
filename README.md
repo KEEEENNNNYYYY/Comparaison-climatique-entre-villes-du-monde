@@ -16,9 +16,8 @@ L'objectif est de **suivre, analyser et visualiser** des indicateurs météorolo
 - **Python 3.11**
 - **Apache Airflow** – Automatisation des tâches ETL
 - **OpenWeather API** – Données météo en temps réel
-- **Données historiques** – Sources CSV / Json publiques (ex: Kaggle)
+- **Données historiques** – Sources CSV / Json publiques 
 - **Pandas / Numpy** – Traitement des données
-- **PostgreSQL** – Stockage structuré
 - **Looker Studio** – Visualisation interactive
 
 ---
