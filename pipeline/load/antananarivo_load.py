@@ -10,7 +10,7 @@ def get_or_create_sheet(service, sheet_name, folder_id):
 
     if files:
         spreadsheet_id = files[0]["id"]
-        print(f"📄 Google Sheets trouvé : {spreadsheet_id}")
+        print(f" Google Sheets trouvé : {spreadsheet_id}")
     else:
         file_metadata = {
             "name": sheet_name,
@@ -19,7 +19,7 @@ def get_or_create_sheet(service, sheet_name, folder_id):
         }
         file = service.files().create(body=file_metadata, fields="id").execute()
         spreadsheet_id = file.get("id")
-        print(f"🆕 Nouveau Google Sheets créé : {spreadsheet_id}")
+        print(f" Nouveau Google Sheets créé : {spreadsheet_id}")
 
     return spreadsheet_id
 
@@ -35,7 +35,7 @@ def write_df_to_sheet(service, spreadsheet_id, df, sheet_name='Sheet1'):
         body={"values": values}
     ).execute()
 
-    print(f"✅ {len(df)} lignes écrites dans la feuille.")
+    print(f" {len(df)} lignes écrites dans la feuille.")
 
 def upload_csv_to_drive(service_account_path, file_path, file_name, folder_id):
     # Authentification

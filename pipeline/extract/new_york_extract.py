@@ -25,7 +25,7 @@ def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = tar
         data = Daily(new_york, start, end).fetch()
 
         if data.empty:
-            print("[!] Aucune donnée récupérée.")
+            print(" Aucune donnée récupérée.")
             return
 
         for date, row in data.iterrows():
@@ -50,7 +50,7 @@ def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = tar
             with open(path, "w") as f:
                 json.dump(weather_info, f, indent=2)
 
-            print(f"[✔] Données sauvegardées dans {path}")
+            print(f" Données sauvegardées dans {path}")
 
     except Exception as e:
-        print(f"[✘] Une erreur est survenue : {e}")
+        print(f" Une erreur est survenue : {e}")

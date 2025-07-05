@@ -50,7 +50,7 @@ def merge_all_json_to_csv():
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False, encoding='utf-8')
 
-    print(f"✅ Tous les fichiers JSON ont été fusionnés ici : {output_path}")
+    print(f" Tous les fichiers JSON ont été fusionnés ici : {output_path}")
 
 if __name__ == '__main__':
     merge_all_json_to_csv()

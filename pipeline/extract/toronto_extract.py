@@ -39,4 +39,4 @@ def fetch_and_save_history(start_date: str = "2020-01-01", output_dir: str = "/h
         with open(path, "w") as f:
             json.dump(weather_info, f, indent=2)
 
-        print(f"[✔] Données sauvegardées dans {path}")
+        print(f" Données sauvegardées dans {path}")
